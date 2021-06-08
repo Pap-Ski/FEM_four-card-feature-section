@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+:root {
+  --clr-pr-red: hsl(0, 78%, 62%);
+  --clr-pr-cyan: hsl(180, 62%, 55%);
+  --clr-pr-orange: hsl(34, 97%, 64%);
+  --clr-pr-blue: hsl(212, 86%, 64%);
+  --clr-nue-vdb: hsl(234, 12%, 34%);
+  --clr-nue-gb: hsl(229, 6%, 66%);
+  --clr-nue-vlg: hsl(0, 0%, 98%);
+  --ff-all: "Poppins", sans-serif;
+}
+
+/* HTML reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--ff-all);
+}
+body {
+  margin: 4rem 2.3rem;
+}
+
+p {
+  color: var(--clr-nue-gb);
+}
+h1,
+h3 {
+  color: var(--clr-nue-vdb);
+}
+header {
+  text-align: center;
+  margin-bottom: 3em;
+}
+header h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+header span {
+  font-weight: 200;
+}
+header p {
+  font-size: 0.9rem;
+}
+
+.card {
+  /* border: 1px solid black; */
+  padding: 1em;
+  margin-bottom: 2em;
+  border-radius: 0.4em;
+  box-shadow: 0em 0.2em 1em var(--clr-nue-gb);
+}
+.card-bt-red {
+  border-top: 5px solid var(--clr-pr-red);
+}
+.card-bt-cyan {
+  border-top: 5px solid var(--clr-pr-cyan);
+}
+.card-bt-orange {
+  border-top: 5px solid var(--clr-pr-orange);
+}
+.card-bt-blue {
+  border-top: 5px solid var(--clr-pr-blue);
+}
+.card p {
+  font-size: 0.85rem;
+  margin-bottom: 3em;
+}
+
+.card-img img {
+  margin-left: 12em;
+}
