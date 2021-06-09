@@ -30,22 +30,26 @@ h1,
 h3 {
   color: var(--clr-nue-vdb);
 }
-header {
+.head {
   text-align: center;
   margin-bottom: 3em;
 }
-header h1 {
+.head h1 {
   font-size: 1.5rem;
-  margin-bottom: 1em;
+  margin-bottom: 0.8em;
 }
-header span {
+.head span {
   font-weight: 200;
 }
-header p {
+.head p {
   font-size: 0.9rem;
+}
+.head br {
+  display: none;
 }
 
 .card {
+  background-color: #ffffff;
   padding: 1.2em;
   margin-bottom: 2em;
   border-radius: 0.4em;
@@ -68,6 +72,38 @@ header p {
   margin-bottom: 3em;
 }
 
-.card-img img {
-  margin-left: 12em;
+.card-img {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+@media (min-width: 376px) {
+  body {
+    margin: 2rem 10rem;
+  }
+  .head p {
+    font-size: 1rem;
+  }
+  .head br {
+    display: inline;
+  }
+  .head h1 {
+    font-size: 2rem;
+  }
+  .head,
+  section {
+    min-width: 600px;
+  }
+
+  section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .card {
+    min-width: 200px;
+  }
+  .card-container {
+    width: 32%;
+  }
 }
